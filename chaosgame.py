@@ -45,10 +45,7 @@ while loop_count > 0:
     if ((rand_ == 5) or (rand_ == 6)):
         dist = distance(tmp_point,point_56)
         k=point_56
-       
-    #print(np.subtract(k,tmp_point))
-   # print(np.divide(np.subtract(k,tmp_point),2))
-   
+
     tmp_point = np.divide(k + tmp_point,2)
     
     dpoints.append(tmp_point)
@@ -68,9 +65,7 @@ w.create_circle(point_34[0], point_34[1], 5, fill="green",  width=1)
 w.create_circle(point_56[0], point_56[1], 5, fill="green",  width=1)
 
 for member in dpoints:
-#    print(member)
     w.create_circle(member[0], member[1], 1, fill="blue",  width=1)
-    #w.show()
     
 w.pack()
 
